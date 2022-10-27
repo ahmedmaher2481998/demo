@@ -5,7 +5,6 @@ import {
   AiOutlineCloseCircle,
 } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
-import ImgLink from "./ImageLink";
 import LogInLinks from "./LogInLinks";
 const Form = () => {
   const [email, setEmail] = useState("");
@@ -14,7 +13,7 @@ const Form = () => {
   const toggleSeePass = () => setSeePass((pre) => !pre);
   const navigate = useNavigate();
   return (
-    <div className="flex items-center flex-col justify-center w-max ml-auto lg:mr-10 xl:mr-16">
+    <div className="flex items-center flex-col justify-center w-80 bg-gray-700  ml-auto lg:mr-10 xl:mr-16">
       <div className=" relative flex border  border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary focus:border-secondary   ">
         <input
           type="email"
