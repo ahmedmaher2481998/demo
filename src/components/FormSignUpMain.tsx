@@ -58,10 +58,10 @@ const Form = () => {
       </p>
 
       <button
-        onClick={() => navigate("/Hello")}
+        onClick={() => navigate("/opt")}
         className="bg-secondary mt-2 mb-3 w-full p-3 text-shady rounded-lg btn-shadow"
       >
-        Sign In
+        Sign Up
       </button>
 
       <LogInLinks />
