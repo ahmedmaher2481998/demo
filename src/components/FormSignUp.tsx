@@ -81,7 +81,7 @@ const Form = () => {
         onClick={() => {
           navigate("/Hello");
         }}
-        className="bg-secondary mt-2 mb-3 w-full p-3 rounded-lg btn-shadow"
+        className="bg-secondary text-shady mt-2 mb-3 w-full p-3 rounded-lg btn-shadow"
       >
         Sign up
       </button>

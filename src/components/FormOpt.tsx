@@ -31,7 +31,7 @@ const Form = () => {
 
       <button
         onClick={() => navigate("/sign-up")}
-        className="bg-secondary mt-2 mb-3 w-full p-3 rounded-lg btn-shadow"
+        className="bg-secondary text-shady mt-2 mb-3 w-full p-3 rounded-lg btn-shadow"
       >
         Continue
       </button>
