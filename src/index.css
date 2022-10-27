@@ -12,7 +12,7 @@
     @apply bg-home;
   }
   .link {
-    @apply text-white px-8 text-xl;
+    @apply text-white px-8 text-base;
   }
   .active {
     width: 30%;
@@ -26,10 +26,10 @@
 }
 .hue-container {
   position: absolute;
-  width: 40% !important;
+  width: 25% !important;
   height: 20% !important;
-  top: 20rem;
-  left: 15rem;
+  top: 15rem;
+  left: 10rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -38,15 +38,15 @@
   column-span: 1;
   grid-row-start: 1;
   grid-column-start: 1;
-  width: 226px;
-  height: 226px;
+  width: 200px;
+  height: 200px;
 
   background: #dda82a;
   filter: blur(158.5px);
 }
 .blue {
-  width: 226px;
-  height: 226px;
+  width: 200px;
+  height: 200px;
   column-span: 1;
   grid-row-start: 2;
   grid-column-start: 2;

@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <div className="lg:px-20 px-2">
-      <div className="pt-16 ">
+      <div className="pt-8 ">
         <Nav />
         <Hero />
       </div>

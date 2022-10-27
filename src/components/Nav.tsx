@@ -11,7 +11,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="flex flex-row justify-between">
+    <nav className="flex flex-row justify-between items-center">
       <div>
         <Link onClick={onclickHandler} className={`link `} to="#">
           <span className={`${active === "Home" ? "active" : ""}`}>Home</span>
