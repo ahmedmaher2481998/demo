@@ -13,8 +13,8 @@ const Form = () => {
   const toggleSeePass = () => setSeePass((pre) => !pre);
   const navigate = useNavigate();
   return (
-    <div className="flex items-center flex-col justify-center w-80 bg-gray-700  ml-auto lg:mr-10 xl:mr-16">
-      <div className=" relative flex border  border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary focus:border-secondary   ">
+    <div className="flex items-center flex-col justify-center w-[45%]  ml-auto lg:mr-10 xl:mr-16">
+      <div className=" relative w-full flex border  border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary focus:border-secondary   ">
         <input
           type="email"
           className="w-full rounded-lg  text-sm bg-shad min-h-full text-black  focus:outline-none p-2.5"
@@ -29,7 +29,7 @@ const Form = () => {
           onClick={() => setEmail("")}
         />
       </div>
-      <div className=" relative flex border mt-6 mb-3  border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary focus:border-secondary   ">
+      <div className=" relative flex border mt-6 mb-3 w-full border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary focus:border-secondary   ">
         <input
           type={`${seePass ? "text" : "password"}`}
           className="w-full rounded-lg  text-sm bg-shad min-h-full text-black  focus:outline-none p-2.5"
