@@ -11,7 +11,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="flex flex-row justify-between items-center">
+    <nav className="flex flex-row  justify-between items-center">
       <div>
         <Link onClick={onclickHandler} className={`link `} to="#">
           <span className={`${active === "Home" ? "active" : ""}`}>Home</span>
@@ -35,17 +35,17 @@ const Nav = () => {
           </span>
         </Link>
       </div>
-      <div className="flex flex-row justify-between  space-x-10">
-        <div className={`link `}>
+      <div className="flex flex-row justify-center    mr-16">
+        <div className={`left-link `}>
           <DropDown />
         </div>
-        <button onClick={onclickHandler} className={`link`}>
+        <button onClick={onclickHandler} className={`left-link`}>
           <span className={`${active === "Sign in" ? "active" : ""}`}>
             Sign in
           </span>
         </button>
         <button
-          className={`link bg-white rounded-xl text-black transition-all  hover:text-white hover:bg-secondary `}
+          className={`left-link bg-white rounded-lg text-black transition-all  hover:text-white hover:bg-secondary `}
         >
           <span className={`${active === "Register" ? "active" : ""}`}>
             Register
