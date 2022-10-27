@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="yellow "></div>
         <div className="blue "></div>.
       </div>
-      <div className="grid grid-cols-2 grid-rows-1 md:ml-10 mt-14 md:mt-36">
+      <div className="grid grid-cols-2 grid-rows-1 md:ml-10 mt-14 md:mt-48">
         <div className="row-span-1 row-start-1">
           <div className="flex items-center">
             <div>
