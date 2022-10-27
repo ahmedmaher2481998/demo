@@ -1,7 +1,8 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 
 const Hero = () => {
+  const { pathname } = useLocation();
   return (
     <>
       <div className="hue-container">
@@ -12,8 +13,16 @@ const Hero = () => {
         <div className="row-span-1 row-start-1 ">
           <div className="flex items-center">
             <div className="-mt-32 mr-16">
-              <h1 className="text-white text-4xl w-[22rem] font-bold">
-                Sign In to Recharge Direct
+              <h1
+                className={`text-white font-bold ${
+                  pathname === "/log-in"
+                    ? "w-[22rem] text-4xl"
+                    : "text-5xl w-[30rem]"
+                }`}
+              >
+                {pathname === "/log-in"
+                  ? "Sign In to Recharge Direct"
+                  : "Join F8 to discover so much more.."}
               </h1>
               <div className="text-white m-auto text-xl  mt-10 font-semibold">
                 if you don&apos;t an account you can

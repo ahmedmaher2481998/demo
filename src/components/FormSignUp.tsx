@@ -57,14 +57,14 @@ const Form = () => {
           onClick={() => setFirstName("")}
         /> */}
       </div>
-      <div className=" relative w-full text-center flex border mb-5 border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary focus:border-secondary   ">
+      <div className=" pr-4 relative w-full text-center flex border mb-5 border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary focus:border-secondary   ">
         <select
           name="User"
-          className="w-full h-10 p-2 rounded-lg "
+          className="w-full h-10 p-2 pr-6 rounded-lg outline-none "
           id="user"
           defaultValue={"User"}
         >
-          <option value="User" className="hidden" disabled selected></option>
+          {/* <option value="User" className="hidden" disabled selected></option> */}
           <option value="user">User</option>
           <option value="trader">Trader</option>
         </select>
