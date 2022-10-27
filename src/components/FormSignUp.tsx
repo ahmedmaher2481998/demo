@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { SlCalender } from "react-icons/sl";
+// import { SlCalender } from "react-icons/sl";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
-import ImgLink from "./ImageLink";
-import LogInLinks from "./LogInLinks";
 const Form = () => {
   const navigate = useNavigate();
   const [firstName, setFirstName] = useState("");
@@ -49,27 +47,25 @@ const Form = () => {
       <div className=" relative w-full flex border mb-3 border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary focus:border-secondary   ">
         <DatePicker
           className=" h-10 w-full rounded-lg py-2 pl-6"
-          placeholderText="   Select date"
+          placeholderText="Select date"
           selected={startDate}
           onChange={(date: Date) => setStartDate(date)}
         />
 
-        <SlCalender
+        {/* <SlCalender
           className="bg-white absolute top-3  left-3 text-gray-600"
           onClick={() => setFirstName("")}
-        />
+        /> */}
       </div>
       <div className=" relative w-full text-center flex border mb-3 border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary focus:border-secondary   ">
         <select
           name="User"
           className="w-full h-10 p-2 rounded-lg "
           id="user"
-          defaultValue={"user"}
+          defaultValue={""}
         >
-          <option value="user" selected>
-            User
-          </option>
-
+          <option value="" className="hidden" disabled selected></option>
+          <option value="user">User</option>
           <option value="trader">Trader</option>
         </select>
       </div>
@@ -88,7 +84,6 @@ const Form = () => {
       >
         Sign up
       </button>
-      <LogInLinks />
     </div>
   );
 };
