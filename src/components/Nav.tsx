@@ -39,15 +39,19 @@ const Nav = () => {
         <div className={`left-link `}>
           <DropDown />
         </div>
-        <button onClick={onclickHandler} className={`left-link`}>
-          <span className={`sign-in`}>Sign in</span>
+        <button className={`left-link`}>
+          <Link to="/log-in">
+            <span className={`sign-in`}>Sign in</span>
+          </Link>
         </button>
         <button
           className={`left-link bg-white rounded-lg text-secondary transition-all  hover:text-black hover:bg-secondary `}
         >
-          <span className={`${active === "Register" ? "active" : ""}`}>
-            Register
-          </span>
+          <Link to="sign-up">
+            <span className={`${active === "Register" ? "active" : ""}`}>
+              Register
+            </span>
+          </Link>
         </button>
       </div>
     </nav>
