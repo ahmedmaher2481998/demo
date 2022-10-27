@@ -70,12 +70,6 @@ const Form = () => {
         </select>
       </div>
 
-      <p className="w-full flex mb-3 p-2">
-        <Link className=" text-sm -mt-2 text-gray-400 ml-auto   " to="#">
-          Recover Password ?
-        </Link>
-      </p>
-
       <button
         onClick={() => {
           navigate("/Hello");
