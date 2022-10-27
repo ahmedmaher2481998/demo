@@ -40,9 +40,7 @@ const Nav = () => {
           <DropDown />
         </div>
         <button onClick={onclickHandler} className={`left-link`}>
-          <span className={`${active === "Sign in" ? "active" : ""}`}>
-            Sign in
-          </span>
+          <span className={`sign-in`}>Sign in</span>
         </button>
         <button
           className={`left-link bg-white rounded-lg text-secondary transition-all  hover:text-black hover:bg-secondary `}

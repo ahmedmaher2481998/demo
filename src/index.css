@@ -14,6 +14,9 @@
   .link {
     @apply text-white px-8 text-base;
   }
+  .sign-in {
+    @apply text-secondary;
+  }
   .left-link {
     @apply text-white px-6 text-base;
   }
@@ -69,4 +72,14 @@
   flex: 1 1;
   border-bottom: 2px solid #c7c7c7;
   margin: auto;
+}
+
+.sign-in::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  display: block;
+  margin: 2px auto;
+
+  background-color: #4461f2;
 }
