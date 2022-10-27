@@ -45,7 +45,7 @@ const Nav = () => {
           </span>
         </button>
         <button
-          className={`left-link bg-white rounded-lg text-black transition-all  hover:text-white hover:bg-secondary `}
+          className={`left-link bg-white rounded-lg text-secondary transition-all  hover:text-black hover:bg-secondary `}
         >
           <span className={`${active === "Register" ? "active" : ""}`}>
             Register
