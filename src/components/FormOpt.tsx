@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
-import ImgLink from "./ImageLink";
 import LogInLinks from "./LogInLinks";
 const Form = () => {
   const navigate = useNavigate();

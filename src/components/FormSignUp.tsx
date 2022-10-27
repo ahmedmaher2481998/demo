@@ -3,7 +3,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 // import { SlCalender } from "react-icons/sl";
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const Form = () => {
   const navigate = useNavigate();
   const [firstName, setFirstName] = useState("");
