@@ -84,5 +84,8 @@
   background-color: #4461f2;
 }
 select {
-  color: #c7c7c7;
+  color: #8a96a3;
+}
+option {
+  color: black;
 }
