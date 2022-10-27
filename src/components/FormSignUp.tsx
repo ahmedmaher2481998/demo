@@ -48,7 +48,7 @@ const Form = () => {
 
       <div className=" relative w-full flex border mb-3 border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary focus:border-secondary   ">
         <DatePicker
-          className=" h-10 rounded-lg py-2 pl-6"
+          className=" h-10 w-full rounded-lg py-2 pl-6"
           placeholderText="   Select date"
           selected={startDate}
           onChange={(date: Date) => setStartDate(date)}
