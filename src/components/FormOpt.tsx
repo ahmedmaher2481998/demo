@@ -8,7 +8,7 @@ const Form = () => {
   const [opt, setOpt] = useState("");
   return (
     <div className="flex items-center  w-[45%] flex-col justify-center  ml-auto lg:mr-10 xl:mr-16">
-      <div className="w-full relative flex border  border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary focus:border-secondary   ">
+      <div className="w-full relative flex border   border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary focus:border-secondary   ">
         <input
           type="text"
           className="w-full rounded-lg  text-sm bg-shad min-h-full text-black  focus:outline-none p-2.5"

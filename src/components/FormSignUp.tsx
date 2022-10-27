@@ -13,7 +13,7 @@ const Form = () => {
   return (
     <div className="flex items-center flex-col justify-center w-[45%] ml-auto lg:mr-10 xl:mr-16">
       <script src="https://unpkg.com/flowbite@1.5.3/dist/datepicker.js"></script>
-      <div className="w-full relative flex border mb-3 border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary w-full focus:border-secondary   ">
+      <div className="w-full relative flex border mb-5 border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary w-full focus:border-secondary   ">
         <input
           type="text"
           className="w-full rounded-lg  text-sm bg-shad min-h-full text-black  focus:outline-none p-2.5"
@@ -28,7 +28,7 @@ const Form = () => {
           onClick={() => setFirstName("")}
         />
       </div>
-      <div className=" w-full relative flex border mb-3 border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary focus:border-secondary   ">
+      <div className=" w-full relative flex border mb-5 border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary focus:border-secondary   ">
         <input
           type="text"
           className=" rounded-lg w-full  text-sm bg-shad min-h-full text-black  focus:outline-none p-2.5"
@@ -44,7 +44,7 @@ const Form = () => {
         />
       </div>
 
-      <div className=" relative w-full flex border mb-3 border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary focus:border-secondary   ">
+      <div className=" relative w-full flex border mb-5 border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary focus:border-secondary   ">
         <DatePicker
           className=" h-10 w-full rounded-lg p-2 "
           placeholderText="Select date"
@@ -57,14 +57,14 @@ const Form = () => {
           onClick={() => setFirstName("")}
         /> */}
       </div>
-      <div className=" relative w-full text-center flex border mb-3 border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary focus:border-secondary   ">
+      <div className=" relative w-full text-center flex border mb-5 border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary focus:border-secondary   ">
         <select
           name="User"
           className="w-full h-10 p-2 rounded-lg "
           id="user"
-          defaultValue={""}
+          defaultValue={"User"}
         >
-          <option value="" className="hidden" disabled selected></option>
+          <option value="User" className="hidden" disabled selected></option>
           <option value="user">User</option>
           <option value="trader">Trader</option>
         </select>

@@ -14,7 +14,7 @@ const Form = () => {
   const navigate = useNavigate();
   return (
     <div className="flex items-center flex-col justify-center w-[45%]  ml-auto lg:mr-10 xl:mr-16">
-      <div className=" relative w-full flex border  border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary focus:border-secondary   ">
+      <div className=" relative w-full flex border mb-2 border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary focus:border-secondary   ">
         <input
           type="email"
           className="w-full rounded-lg  text-sm bg-shad min-h-full text-black  focus:outline-none p-2.5"
