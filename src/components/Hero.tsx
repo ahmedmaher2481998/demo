@@ -14,11 +14,8 @@ const Hero = () => {
           <div className="flex items-center">
             <div className="-mt-32 mr-16">
               <h1
-                className={`text-white font-bold ${
-                  pathname === "/log-in"
-                    ? "w-[22rem] text-4xl"
-                    : "text-5xl w-[30rem]"
-                }`}
+                className={`text-white font-bold 
+                w-[22rem] text-4xl`}
               >
                 {pathname === "/log-in"
                   ? "Sign In to Recharge Direct"
