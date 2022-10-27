@@ -61,7 +61,7 @@ const Form = () => {
         onClick={() => navigate("/opt")}
         className="bg-secondary mt-2 mb-3 w-full p-3 text-shady rounded-lg btn-shadow"
       >
-        Sign Up
+        Register
       </button>
 
       <LogInLinks />
