@@ -55,7 +55,7 @@ const Form = () => {
           onClick={() => setState("")}
         />
       </div>
-      <div className="flex items-start-start flex-col w-full p-2 justify-center">
+      <div className="flex items-start-start flex-col w-full  justify-center">
         <p className="text-sm text-[#c7c7c7]">Pick your Interest!</p>
         <div className="flex justify-between mt-5 space-x-3 items-center">
           <button
