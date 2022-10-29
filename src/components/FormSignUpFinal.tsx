@@ -6,7 +6,7 @@ const Btn = (props: { text: string; activeState: boolean }) => {
   return (
     <button
       onClick={(e) => setActive((pre) => (pre = !pre))}
-      className={`w-28 rounded-md p-3 text-center text-base ${
+      className={`w-24 rounded-md p-3 text-center text-base ${
         active ? "active-btn" : "bg-shady"
       }`}
     >
@@ -29,7 +29,7 @@ const Form = () => {
           <img
             src={img}
             alt="Profile avatar"
-            className="w-auto h-28 mb-2 rounded-lg"
+            className="w-28 h-28 mb-2 rounded-lg"
           />
           <AiOutlineCloseCircle
             onClick={() => setImg(img1)}
