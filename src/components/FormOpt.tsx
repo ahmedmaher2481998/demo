@@ -29,7 +29,7 @@ const Form = () => {
       </p>
 
       <button
-        onClick={() => navigate("/finish-registration")}
+        onClick={() => navigate("/personal-details")}
         className="bg-secondary text-shady mt-2 mb-3 w-full p-3 rounded-lg btn-shadow"
       >
         Continue

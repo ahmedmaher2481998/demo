@@ -10,10 +10,10 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />}>
-          <Route path="/log-in" element={<FormLogIn />} />
+          <Route path="/sign-in" element={<FormLogIn />} />
           <Route path="/opt" element={<FormOpt />} />
           <Route path="/sign-up" element={<FormSignUpMain />} />
-          <Route path="/finish-registration" element={<FormSignUp />} />
+          <Route path="/personal-details" element={<FormSignUp />} />
           <Route path="/final" element={<FormSignUpFinal />} />
         </Route>
       </Routes>

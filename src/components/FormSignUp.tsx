@@ -71,7 +71,7 @@ const Form = () => {
 
       <button
         onClick={() => {
-          navigate("/Hello");
+          navigate("/final");
         }}
         className="bg-secondary text-shady mt-2 mb-3 w-full p-3 rounded-lg btn-shadow"
       >

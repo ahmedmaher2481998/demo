@@ -40,14 +40,14 @@ const Nav = () => {
           <DropDown />
         </div>
         <button className={`left-link`}>
-          <Link to="/log-in">
+          <Link to="/sign-in">
             <span className={`sign-in`}>Sign in</span>
           </Link>
         </button>
         <button
           className={`left-link bg-white rounded-lg text-secondary transition-all  hover:text-black hover:bg-secondary `}
         >
-          <Link to="sign-up">
+          <Link to="/sign-up">
             <span className={`${active === "Register" ? "active" : ""}`}>
               Register
             </span>
