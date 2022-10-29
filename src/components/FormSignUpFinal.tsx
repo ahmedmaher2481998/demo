@@ -29,7 +29,7 @@ const Form = () => {
           <img
             src={img}
             alt="Profile avatar"
-            className="w-auto h-32 rounded-lg"
+            className="w-auto h-28 mb-2 rounded-lg"
           />
           <AiOutlineCloseCircle
             onClick={() => setImg(img1)}
