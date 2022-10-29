@@ -1,11 +1,23 @@
 import React, { useState } from "react";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
+const Btn = (props: { text: string; activeState: boolean }) => {
+  const [active, setActive] = useState(props.activeState);
+  return (
+    <button
+      onClick={(e) => setActive((pre) => (pre = !pre))}
+      className={`w-28 rounded-md p-3 text-center text-base ${
+        active ? "active-btn" : "bg-shady"
+      }`}
+    >
+      {props.text}
+    </button>
+  );
+};
 const Form = () => {
   const navigate = useNavigate();
   const [country, setCountry] = useState("");
   const [state, setState] = useState("");
-  const [activeBtn, setActiveBtn] = useState<string | null>("Forex");
   const img1 =
     "https://as2.ftcdn.net/v2/jpg/02/15/84/43/1000_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg";
   const img2 = "/assets/Rectangle 2.png";
@@ -57,31 +69,10 @@ const Form = () => {
       </div>
       <div className="flex items-start-start flex-col w-full  justify-center">
         <p className="text-sm text-[#c7c7c7]">Pick your Interest!</p>
-        <div className="flex justify-between mt-5 space-x-3 items-center">
-          <button
-            onClick={(e) => setActiveBtn(e.currentTarget.textContent)}
-            className={`w-24 rounded-md p-3  text-base ${
-              activeBtn === "Forex" ? "active-btn" : "bg-shady"
-            }`}
-          >
-            Forex
-          </button>
-          <button
-            onClick={(e) => setActiveBtn(e.currentTarget.textContent)}
-            className={`w-28 rounded-md p-3  text-base ${
-              activeBtn === "Crypto" ? "active-btn" : "bg-shady"
-            }`}
-          >
-            Crypto
-          </button>
-          <button
-            onClick={(e) => setActiveBtn(e.currentTarget.textContent)}
-            className={`w-28 rounded-md p-3  text-base ${
-              activeBtn === "Binary" ? "active-btn" : "bg-shady"
-            }`}
-          >
-            Binary
-          </button>
+        <div className="flex justify-between mt-5 mb-5 space-x-5 items-center">
+          <Btn text="Forex" activeState={false} />
+          <Btn text="Crypto" activeState={false} />
+          <Btn text="Binary" activeState={false} />
         </div>
       </div>
 
@@ -96,4 +87,5 @@ const Form = () => {
     </div>
   );
 };
+
 export default Form;
