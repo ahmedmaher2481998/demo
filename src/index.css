@@ -11,6 +11,9 @@
     height: 100vh;
     @apply bg-home;
   }
+  .active-btn {
+    @apply bg-secondary bg-opacity-90 text-gray2;
+  }
   .link {
     @apply text-white px-8 text-base;
   }

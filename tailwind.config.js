@@ -7,7 +7,7 @@ module.exports = {
         home: "#14162E",
         secondary: "#4461F2",
         shady: "#EAF0F7",
-        gary2: "#C7C7C7",
+        gray2: "#C7C7C7",
       },
     },
   },
