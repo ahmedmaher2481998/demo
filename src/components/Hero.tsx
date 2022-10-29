@@ -2,7 +2,13 @@ import React from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 
 const Hero = () => {
+  let mainText;
   const { pathname } = useLocation();
+  if (pathname === "/log-in" || pathname === "/final") {
+    mainText = "Sign In to Recharge Direct";
+  } else {
+    mainText = "Join F8 to discover so much more..";
+  }
   return (
     <>
       <div className="hue-container">
@@ -17,9 +23,7 @@ const Hero = () => {
                 className={`text-white font-bold 
                 w-[22rem] text-4xl`}
               >
-                {pathname === "/log-in"
-                  ? "Sign In to Recharge Direct"
-                  : "Join F8 to discover so much more.."}
+                {mainText}
               </h1>
               <div className="text-white m-auto text-xl  mt-10 font-semibold">
                 if you don&apos;t an account you can

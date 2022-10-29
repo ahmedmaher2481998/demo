@@ -12,7 +12,6 @@ const Form = () => {
 
   return (
     <div className="flex items-center flex-col justify-center w-[45%] ml-auto lg:mr-10 xl:mr-16">
-      <script src="https://unpkg.com/flowbite@1.5.3/dist/datepicker.js"></script>
       <div className="w-full relative flex border mb-5 border-gray-300 text-gray-900  bg-shady rounded-lg focus:ring-secondary w-full focus:border-secondary   ">
         <input
           type="text"

@@ -4,6 +4,7 @@ import FormLogIn from "./components/FormLogIn";
 import FormOpt from "./components/FormOpt";
 import FormSignUp from "./components/FormSignUp";
 import FormSignUpMain from "./components/FormSignUpMain";
+import FormSignUpFinal from "./components/FormSignUpFinal";
 function App() {
   return (
     <Router>
@@ -13,6 +14,7 @@ function App() {
           <Route path="/opt" element={<FormOpt />} />
           <Route path="/sign-up" element={<FormSignUpMain />} />
           <Route path="/finish-registration" element={<FormSignUp />} />
+          <Route path="/final" element={<FormSignUpFinal />} />
         </Route>
       </Routes>
     </Router>
